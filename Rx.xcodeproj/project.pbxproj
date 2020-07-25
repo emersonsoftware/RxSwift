@@ -996,6 +996,7 @@
 		A520FFF61F0D258E00573734 /* RxPickerViewDataSourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPickerViewDataSourceType.swift; sourceTree = "<group>"; };
 		A520FFFB1F0D291500573734 /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		A5CD03891F1660F40005A376 /* RxPickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPickerViewAdapter.swift; sourceTree = "<group>"; };
+		A62EBA7624CC92D600E8C823 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AAE623751C82475700FC7801 /* UIProgressView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Rx.swift"; sourceTree = "<group>"; };
 		B562478D2035154900D3EE75 /* RxCollectionViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
 		B5624793203532F500D3EE75 /* RxTableViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
@@ -1266,7 +1267,7 @@
 		C85B01681DB2ACAF006043C3 /* Platform.Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.Linux.swift; sourceTree = "<group>"; };
 		C85B01721DB2ACF2006043C3 /* Platform.Darwin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.Darwin.swift; sourceTree = "<group>"; };
 		C85B01731DB2ACF2006043C3 /* Platform.Linux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.Linux.swift; sourceTree = "<group>"; };
-		C85BA04B1C3878740075D68E /* PerformanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PerformanceTests.app; path = Microoptimizations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85BA04B1C3878740075D68E /* Microoptimizations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Microoptimizations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85E6FBB1F52FF4F00C5681E /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		C85E6FBD1F53025700C5681E /* SchedulerType+SharedSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SchedulerType+SharedSequence.swift"; sourceTree = "<group>"; };
 		C86781471DB8119900B2029A /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
@@ -2380,6 +2381,7 @@
 		C8A56ACD1AD7424700B4673B = {
 			isa = PBXGroup;
 			children = (
+				A62EBA7624CC92D600E8C823 /* Config.xcconfig */,
 				C85B01711DB2ACF2006043C3 /* Platform */,
 				C8093C471B8A72BE0088E94D /* RxSwift */,
 				C8093F571B8A73A20088E94D /* RxBlocking */,
@@ -2402,7 +2404,7 @@
 				C83508C31C386F6F0027C24C /* AllTests-iOS.xctest */,
 				C83509841C38740E0027C24C /* AllTests-tvOS.xctest */,
 				C83509941C38742C0027C24C /* AllTests-macOS.xctest */,
-				C85BA04B1C3878740075D68E /* PerformanceTests.app */,
+				C85BA04B1C3878740075D68E /* Microoptimizations.app */,
 				C8E8BA551E2C181A00A4AC2C /* Benchmarks.xctest */,
 				A2897D53225CA1E7004EA481 /* RxRelay.framework */,
 			);
@@ -2648,7 +2650,7 @@
 			);
 			name = Microoptimizations;
 			productName = PerformanceTests;
-			productReference = C85BA04B1C3878740075D68E /* PerformanceTests.app */;
+			productReference = C85BA04B1C3878740075D68E /* Microoptimizations.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C88FA4FD1C25C44800CCFEA4 /* RxTest */ = {
@@ -3892,6 +3894,7 @@
 /* Begin XCBuildConfiguration section */
 		A2897D50225CA1E7004EA481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3908,6 +3911,7 @@
 		};
 		A2897D51225CA1E7004EA481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3924,6 +3928,7 @@
 		};
 		A2897D52225CA1E7004EA481 /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3940,6 +3945,7 @@
 		};
 		C809396A1B8A71760088E94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3956,6 +3962,7 @@
 		};
 		C809396B1B8A71760088E94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3972,6 +3979,7 @@
 		};
 		C809396C1B8A71760088E94D /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -3988,6 +3996,7 @@
 		};
 		C8093BC41B8A71F00088E94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4004,6 +4013,7 @@
 		};
 		C8093BC51B8A71F00088E94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4020,6 +4030,7 @@
 		};
 		C8093BC61B8A71F00088E94D /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4210,6 +4221,7 @@
 		};
 		C85BA0551C3878750075D68E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -4230,6 +4242,7 @@
 		};
 		C85BA0561C3878750075D68E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -4245,6 +4258,7 @@
 		};
 		C85BA0571C3878750075D68E /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -4326,6 +4340,7 @@
 		};
 		C8633A951B08FA5500375D60 /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4342,6 +4357,7 @@
 		};
 		C88FA5091C25C44800CCFEA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
@@ -4364,6 +4380,7 @@
 		};
 		C88FA50A1C25C44800CCFEA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
@@ -4386,6 +4403,7 @@
 		};
 		C88FA50B1C25C44800CCFEA4 /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
@@ -4543,6 +4561,7 @@
 		};
 		C8A56AEE1AD7424700B4673B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4559,6 +4578,7 @@
 		};
 		C8A56AEF1AD7424700B4673B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4575,6 +4595,7 @@
 		};
 		C8E8BA5E1E2C181A00A4AC2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -4599,6 +4620,7 @@
 		};
 		C8E8BA5F1E2C181A00A4AC2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -4617,6 +4639,7 @@
 		};
 		C8E8BA601E2C181A00A4AC2C /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBA7624CC92D600E8C823 /* Config.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
